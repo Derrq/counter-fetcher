@@ -14,6 +14,9 @@ function App() {
   function decrementCounter() {
     setCounter(prevCounter => prevCounter - 1);
   }
+  function clearData() {
+    setData([]);
+  }
 
   function fetchData() {
     // MAke API call using axious or fetch() here we use fetch
@@ -52,6 +55,12 @@ function App() {
                 onClick={decrementCounter}
               >
                 Decrement
+              </button>
+              <button
+                className="px-4 py-2 rounded-md bg-black text-white hover:bg-red-500"
+                onClick={clearData}
+              >
+                Clear Data
               </button>
             </div>
           </div>
