@@ -41,8 +41,8 @@ function App() {
     <>
       <div className="bg-gray-100 min-h-screen">
         <div className="max-w-2xl mx-auto p-8">
+            <h2 className="text-xl font-medium">Counter: {counter}</h2>
           <div className="flex items-center justify-between mb-8">
-            <p className="text-xl font-medium">Counter: {counter}</p>
             <div className="flex space-x-2">
               <button
                 className="px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600"
